@@ -1,0 +1,148 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.7in]{geometry}
+% \usepackage[margin=1.25in]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{tcolorbox}
+\usepackage{polski}
+\usepackage{multicol}
+\usepackage{transparent}
+\usepackage{ragged2e}
+\usepackage{geometry}
+
+\geometry{
+  bottom=3cm
+%   footskip=2cm
+}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\transparent{0.4} \justify{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).}}
+% \chead{}
+
+
+\titleformat{\section}
+{\huge}
+{}
+{0em}
+{\bfseries}[\titlerule\vspace{-.2cm}]
+
+\titleformat{\subsection}
+{\vspace{1em}\bfseries\large}
+% {\hspace{-.25in}$\bullet$}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[\hspace{1em}---]
+
+\titlespacing{\subsubsection}
+{0em}{.25em}{1em}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        % {\Huge\bfseries\thetitle}
+
+        % \vspace{1.5em}
+
+
+        {\huge\bfseries\theauthor}
+
+        \vspace{.25em}
+
+        +48 888 829 696\\czajka.adam147@gmail.com\\github.com/czajrow
+	\end{center}
+	\vspace{-.5cm}
+}
+
+
+\begin{document}
+
+
+\title{CV}
+\author{Adam Czajka}
+
+\maketitle
+
+\vspace{2em}
+
+\begin{minipage}[t]{.5\textwidth}
+
+	\section{edukacja}
+	\subsection{Politechnika Warszawska}
+	\texttt{10/2017 - obecnie}
+	\par Informatyka, wydział elektryczny, studia inżynierskie.
+
+	\subsection{John von Neumann University}
+	\texttt{9/2019 - 5/2020}
+	\par Informatyka, wymiana \texttt{Erasmus+}, studia międzynarodowe.
+
+	\vspace{2em}
+
+	\section{doświadczenie zawodowe}
+
+	\subsection{Biuro Informatyki w Urzędzie Mazowieckim}
+	\texttt{7/2019 - 8/2019}
+	\par Staż w Biurze Informatyki - praca przy odbiorze modułu danych otwartych na stronę \texttt{www.gov.pl}.
+
+	\subsection{Erasmus Student Network}
+	\texttt{11/2017 - obecnie}
+	\par W ramach mojej działalności w \texttt{ESN} zajmowałem się organizacją wydarzeń dla studentów międzynarodowych w Warszawie. W szczególności przez dwa lata pełniłem funkcję koordynatora sportu \texttt{ESN}.
+
+	\subsection{Mały Inżynier}
+	\texttt{6/2018 - 2/2019}
+	\par\texttt{Mały Inżynier} to firma w której prowadziłem zajęcia edukacyjne z programowania, eksperymentów, robotyki i majsterkowania dla dzieci.
+
+	\subsection{Europejska Szkoła Korepetycji}
+	\texttt{10/2017 - 6/2019}
+	\par W \texttt{Europejskiej Szkole Korepetycji} prowadziłem indywidualne lekcje z matematyki i fizyki dla uczniów Liceum przygotowujących się do egzaminu maturalnego z tych przedmiotów.
+
+\end{minipage}\hfill
+\begin{minipage}[t]{.4\textwidth}
+
+	\section{realizowane projekty}
+	\subsection{Android Studio}
+	Aplikacja w technologii Android (Java), w której sieć neuronowa typu \verb+MLP+ (również zaimplementowana własnoręcznie w języku \verb+Java+) prowadzi rozgrywkę z użytkownikiem w grę \verb+Kółko i Krzyżyk+.
+
+	\subsection{JavaFX}
+	Aplikacja \verb+JavaFX+ wykorzystująca bibliotekę \verb+OpenCV+ do rozpoznawania pojazdów na filmie.
+
+	\subsection{JavaScript}
+	Wizualizacja metody \verb+Monte Carlo+ do obliczania całki oznaczonej dowolnej funkcji matematycznej o rzeczywistej dziedzinie. Wykorzystana została biblioteka \verb+p5.js+.
+
+	\vspace{1em}
+
+	\section{umiejętności}
+	\subsection{Technologia}
+	Java 8, C, MatLab, Angular2, TypeScript, JavaScript, HTML, CSS, Python, bash/zsh, git~(także w wierszu poleceń), vim, \LaTeX, SQL.
+
+	\subsection{Inne}
+	podstawowa znajomość \verb+UML+, znajomość podstawowych wzorców projektowych, znajomość zasad \verb+OOP+, znajomość założeń metodyki \verb+SCRUM+.
+
+	\subsection{Języki obce}
+	\subsubsection{Angielski} C1 (słownictwo informatyczne)
+
+	\vspace{1em}
+
+	\section{zainteresowania}
+	sporty wodne - multimedalista mistrzostw polski w wioślarstwie, były członek kadry narodowej w wioślarstwie, żeglarz morski.
+
+\end{minipage}
+
+\end{document}
