@@ -1,0 +1,157 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[polish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=.7in]{geometry}
+% \usepackage[margin=1.25in]{geometry}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{blindtext}
+\usepackage{tcolorbox}
+\usepackage{polski}
+\usepackage{multicol}
+\usepackage{transparent}
+\usepackage{ragged2e}
+\usepackage{geometry}
+
+\geometry{
+  bottom=3cm
+%   footskip=2cm
+}
+
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\transparent{0.4} \justify{Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).}}
+% \chead{}
+
+
+\titleformat{\section}
+{\huge}
+{}
+{0em}
+{\bfseries}[\titlerule\vspace{-.2cm}]
+
+\titleformat{\subsection}
+{\vspace{1em}\bfseries\large}
+% {\hspace{-.25in}$\bullet$}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[\hspace{1em}---]
+
+\titlespacing{\subsubsection}
+{0em}{.25em}{1em}
+
+\renewcommand{\maketitle}{
+    \begin{center}
+        % {\Huge\bfseries\thetitle}
+
+        % \vspace{1.5em}
+
+
+        {\huge\bfseries\theauthor}
+
+        \vspace{.25em}
+
+        +48 888 829 696\\czajka.adam147@gmail.com\\github.com/czajrow
+	\end{center}
+	\vspace{-.5cm}
+}
+
+
+\begin{document}
+
+
+\title{CV}
+\author{Adam Czajka}
+
+\maketitle
+
+\vspace{2em}
+
+\begin{minipage}[t]{.5\textwidth}
+	\section{education}
+
+    \subsection{Warsaw University of Technology}
+	\texttt{02/2021 - present}
+	\par Applied Computer Science, Faculty of Electrical Engineering, masters degree.
+
+    \subsection{John von Neumann University, Węgry}
+	\texttt{9/2019 - 5/2020}
+	\par Computer Science, \texttt{Erasmus+} , international studies.
+
+	\subsection{Warsaw University of Technology}
+	\texttt{10/2017 - 02/2021}
+	\par Applied Computer Science, Faculty of Electrical Engineering, bachelor degree.
+
+	\vspace{2em}
+
+	\section{employment history}
+
+    \subsection{Airnauts}
+	\texttt{06/2020 - present}
+	\par ASDF
+
+
+	\subsection{Erasmus Student Network}
+	\texttt{11/2017 - 04/2021}
+	\par As part of my work at \texttt{ESN}, I was involved in the organization of events for international students in Warsaw. For two years I was the \texttt{ESN} sports coordinator.
+
+	\subsection{Mały Inżynier}
+	\texttt{6/2018 - 2/2019}
+	\par\texttt{Mały Inżynier} is a company where I conducted educational classes in programming, experiments, robotics and DIY for children.
+
+	\subsection{Europejska Szkoła Korepetycji}
+	\texttt{10/2017 - 6/2019}
+	\par W \texttt{Europejskiej Szkole Korepetycji} I conducted individual mathematics and physics lessons for high school students preparing for the matriculation examination.
+
+\end{minipage}\hfill
+\begin{minipage}[t]{.4\textwidth}
+
+	\section{completed projects}
+	\subsection{Android Studio}
+    An application based on Android (Java) technology, in which the \texttt{MLP} neural network (also implemented in Java on my own) conducts the game with the user in the game \texttt{Tic-tac-toe}.
+	% Aplikacja w technologii Android (Java), w której sieć neuronowa typu \verb+MLP+ (również zaimplementowana własnoręcznie w języku \verb+Java+) prowadzi rozgrywkę z użytkownikiem w grę \verb+Kółko i Krzyżyk+.
+
+	\subsection{JavaFX}
+	\texttt application that uses the \texttt{OpenCV} library to recognize vehicles in the film.
+
+	\subsection{JavaScript}
+    Visualization of the \texttt{Monte Carlo} method for computing the definite integral of any mathematical function with a real domain. The \texttt{p5.js} library was used.
+	% Wizualizacja metody \verb+Monte Carlo+ do obliczania całki oznaczonej dowolnej funkcji matematycznej o rzeczywistej dziedzinie. Wykorzystana została biblioteka \verb+p5.js+.
+
+	\vspace{1em}
+
+	\section{skills}
+    \vspace{1em}
+	Angular 2+, TypeScript, JavaScript, HTML, CSS, Java 8, C, MatLab, Python 3, bash/zsh, git, vim, \LaTeX, SQL.
+
+	\subsection{Inne}
+	basic knowledge of UML, knowledge of basic design patterns, OOP principles, SCRUM methodology.
+
+	\subsection{Languages}
+	\subsubsection{English} C1 (IT vocabulary)
+    \subsubsection{Polish} Native
+
+	\vspace{1em}
+
+	\section{zainteresowania}
+    water sports - Polish Rowing Championship medalist, former member of the national rowing team, sea sailor.
+	% sporty wodne - multimedalista mistrzostw polski w wioślarstwie, były członek kadry narodowej w wioślarstwie, żeglarz morski.
+
+\end{minipage}
+
+\end{document}
